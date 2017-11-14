@@ -2,6 +2,8 @@ var main=function(){
     "use strict"
     window.alert("Fuck you! Haha")
 
+    //In this version, we create a function named addComment in order to resue it
+    //in click and keypress listener
     var addComment=function(){
         if ($(".comment-input input").val() !=""){
             var $new_comment= $("<p>");
