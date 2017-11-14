@@ -5,7 +5,11 @@ var main=function(){
     $(".comment-input button").on("click", function (event){
         //console.log("hello world!");
         //window.alert("fuck you again!!");
-        $(".comments").append("Fuck you baby!!");
+        var $new_comment= $("<p>");
+        var $text_comment = $(".comment-input input").val();
+        $new_comment.text($text_comment);
+
+        $(".comments").append($new_comment);
 
     });
 };
