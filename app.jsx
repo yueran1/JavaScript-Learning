@@ -38,16 +38,25 @@ var main=function(){
 
    
     //This a 5 second countdown
+    //When 5 second passed,romover countdown timer and showing new content
     var counter = 5;
+    var content=$("<span>Time till be fucked!: </span>");
+    var new_content=$("<span>TimeUp! Fuck you!!!!</span>").hide();
+    var fuck_div=$(".time-fucker");
+    fuck_div.prepend(content);
     var interval = setInterval(function() {
-        
         // Display 'counter' wherever you want to display it.
-        $(".timer").text(counter);
+        $(".timer").text(counter + "s");
         if (counter == 0) {
             // Display a login box
-            $(".timer").text(counter);
+            //content.fadeOut();
+            content.remove();
+            fuck_div.prepend(new_content);
+            new_content.fadeIn();
             clearInterval(interval);
-            window.alert("Fuck you, there is 5 second pass out");
+            $(".timer").remove();
+            
+            //window.alert("Fuck you, there is 5 second pass out");
             
         }
         counter--;
