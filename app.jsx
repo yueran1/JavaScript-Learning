@@ -35,7 +35,30 @@ var main=function(){
         }
 
     });
+
+   
+    //This a 5 second countdown
+    var counter = 5;
+    var interval = setInterval(function() {
+        
+        // Display 'counter' wherever you want to display it.
+        $(".timer").text(counter);
+        if (counter == 0) {
+            // Display a login box
+            $(".timer").text(counter);
+            clearInterval(interval);
+            window.alert("Fuck you, there is 5 second pass out");
+            
+        }
+        counter--;
+        
+    }, 1000);
+
+    setInterval();
 };
 
 $(document).ready(main);
+
+
+
 
