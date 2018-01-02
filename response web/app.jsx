@@ -53,6 +53,8 @@ var main=function(){
             content.remove();
             fuck_div.prepend(new_content);
             new_content.fadeIn();
+
+            //ckearInterval stop the time interval
             clearInterval(interval);
             $(".timer").remove();
             
