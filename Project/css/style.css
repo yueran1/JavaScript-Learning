@@ -1,0 +1,287 @@
+*{
+    margin:0;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    
+    
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 20px;
+}
+
+
+.main-name-div{
+    padding-top: 130px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-name{
+    font-size: 120px;
+    
+}
+
+.welcome{
+    font-size: 70px;
+    font-family: fantasy;
+    margin-top: 90px;
+    /*color: #ff17b8;*/
+    color: #f6dbed;
+}
+nav {
+    position: fixed;
+    height: 50px;
+    width:100%;
+    background-color: black;
+    opacity:0.5;
+    z-index:99;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    margin-left: 30px;
+    line-height: 50px;
+}
+
+nav a:hover{
+    color:green;
+}
+
+
+/*profile img*/
+.profile-div{
+    
+    
+    width:20%;
+    padding-top: 3%;
+    padding-left: 20%;
+    float:left;
+}
+
+.about-me{
+    padding-top: 3%;
+    width:70%;
+    
+}
+
+.about-me h1{
+    color: white;
+    font-size: 40px;
+}
+
+.about-me p{
+    color: white;
+    font-size: 18px;
+    font-weight:normal;
+}
+
+.user {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid brown;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .one {
+    background-image: url("../img/profile.jpg");
+  }
+  
+  
+
+.sect {
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.subSection.subOne{
+    height: 50%;
+    background-color: #ff20b5;
+    width:100%;
+}
+
+.subSection{
+    height: 50%;
+    
+    background-color: bisque;
+}
+
+.sectOne{
+    
+    background-image: url("../img/image3.jpg")
+}
+
+
+
+.sectTwo{
+    height: 65%;
+    background-image: url("../img/image1.jpg")
+}
+
+.skill-div{padding-left: 33%; padding-top: 5%;}
+
+.sectThree{
+    background-image: url("../img/image2.jpeg")
+}
+
+
+@media screen and (max-width:959px){
+
+    .subSection.subOne{
+        height: 100%;
+        background-color: #ff20b5;
+        width:959px;
+    }
+    
+    .subSection{
+        height: 50%;
+        width:959px;
+        background-color: bisque;
+    }
+    
+
+    .sect {
+        height:100%;
+        width: 959px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    html,body{margin: 0;}
+    nav {
+        position: fixed;
+        height: 50px;
+        width:100%;
+        background-color: black;
+        opacity:0.5;
+        z-index:99;
+    }
+    
+ 
+
+    .user {
+        display: inline-block;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 8px solid brown;
+        margin-left: 110px;
+        
+      
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+
+    .profile-div{
+        
+        float: none;
+        width:309px;
+        
+        
+    }
+    
+    .about-me{
+            text-align: center;
+            width:90%;
+            height: 100%;
+           
+    }
+
+    
+
+    
+}
+
+
+@media screen and (max-width:640px){
+    html,body{margin: 0;}
+    .welcome{
+        font-size: 40px;
+        font-family: fantasy;
+        margin-top: 90px;
+        /*color: #ff17b8;*/
+        color: #f6dbed;
+    }
+    .main-name{
+        font-size: 80px;
+        
+    }
+    .subSection{
+        height: 50%;
+        width:640px;
+        background-color: bisque;
+        
+    }
+    .sect {
+        height:100%;
+        min-height: 500px;
+        width: 640px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .subSection.subOne{
+        min-height: 500px;
+        height: 100%;
+        background-color: #ff20b5;
+        width:640px;
+    }
+    nav {
+        position: fixed;
+        height: 50px;
+        width:640px;
+        background-color: black;
+        opacity:0.5;
+        z-index:99;
+    }
+    
+
+    
+
+    .user {
+        display: inline-block;
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        border: 8px solid brown;
+        margin-left: -40%;
+      
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+    .profile-div{
+        
+        float: none;
+        margin-left: 17%;
+        text-align: center;
+        
+    }
+    
+    .about-me{
+            text-align: center;
+            width:100%;
+            height: 100%;
+            
+    }
+
+    .skill-div{padding-left: 10%; padding-top: 5%;}
+
+    
+    
+
+    
+}
