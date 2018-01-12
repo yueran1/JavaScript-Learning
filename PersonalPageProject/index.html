@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skill_set.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+
+</head>
+
+
+<body>
+    
+    <div class="sect sectOne">
+            <nav>
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">CONTACT</a>
+            
+            </nav>
+
+        <div class="main-name-div">
+            <h1 class="main-name">Tony Sun</h1>
+
+            <h2 class="welcome">Welcome to my world</h2>
+        </div>
+
+        
+        
+    </div>
+    <div class="subSection subOne">
+        <div class="about-div">
+                <div class="profile-div"><div class="user one"></div></div>
+                <div class="about-me">
+                    <h1>About Me</h1>
+                    <p>My name is Tony Sun. I graduated from University of Alberta with Bachelor of computer science degree in 2017
+        
+                    </p>
+                    
+                    <p>Live in Richmond BC, Love coding, ski and Basketball</p>
+                </div>
+        
+
+        </div>
+        
+        
+        
+
+    </div>
+    <div class="sect sectTwo">
+            
+            <div id="skills" class="col-md-5 col-centered">
+                <div class="skillbar_div">
+                        <div class="skillbar clearfix " data-percent="100%">
+                                <div class="skillbar-title" style="background: #ec407a;"><span>Python</span></div>
+                                <div class="skillbar-bar" style="background: #131313;"></div>
+                                <div class="skill-bar-percent">100%</div>
+                        </div>
+                                
+                        <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #ab47bc;"><span>PHP</span></div>
+                                <div class="skillbar-bar" style="background: #131313;"></div>
+                                <div class="skill-bar-percent">85%</div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #5c6bc0;"><span>MySQL</span></div>
+                                <div class="skillbar-bar" style="background: #131313;"></div>
+                                <div class="skill-bar-percent">85%</div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="100%">
+                                <div class="skillbar-title" style="background: #66bb6a;"><span>HTML/CSS</span></div>
+                                <div class="skillbar-bar" style="background: #131313;"></div>
+                                <div class="skill-bar-percent">100%</div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #ffca; z-index:99;"><span>JavaScript</span></div>
+                                <div class="skillbar-bar" style="background: #131313;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #ffca28;"><span>C++</span></div>
+                                <div class="skillbar-bar" style="background: #131313;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                        </div>
+                                
+                                
+                                        
+            </div>
+                    
+        </div>
+         
+    </div>
+    <div class="subSection">
+        <div class="skill-div">
+                <h2>Technology Summary</h2>
+                <ul class='offer'>
+                        <li>Android Software Development with Java and Android Studio    </li>
+                        <li>Website Back End Development with PHP and WordPress, C# and Asp.net
+                        </li>
+    
+                        <li>Website Front End Development with HTML5/CSS3, JavaScript, Jquery
+                        </li>
+    
+                        <li>Website Debugging with Google Chrome </li>
+                        <li>Leadership, Teamwork
+                        </li>
+                        <li>Digital Image Processing </li>
+                </ul>
+        </div>
+
+
+
+    </div>
+    <?php include('form_process.php'); ?>
+    <div class="sect sectThree">
+        <div class="container">
+                <form id="contact" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+                        <h3>Contact Me</h3>
+                        <h4>Contact us today, and get reply with in 24 hours!</h4>
+                        <fieldset>
+                                <input placeholder="Your name" type="text" name="name" value="<?= $name ?>" tabindex="1" required>
+                                <span class="error"><?= $name_error?></span>
+                        </fieldset>
+                        <fieldset>
+                                <input placeholder="Your Email Address" type="email" name="email" value="<?= $email ?>" tabindex="2" required>
+                                <span class="error"><?= $email_error?></span>
+                        </fieldset>
+                        <fieldset>
+                                <textarea placeholder="Type your Message Here..." tabindex="3" name="message" value="<?= $message ?>" required></textarea>
+                                
+                        </fieldset>
+                        <fieldset>
+                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                </form>
+
+        </div>
+
+    </div>
+
+        
+
+    <script src="JS/skill_set.jsx"></script>
+    
+</body>
+
+
+</html>
